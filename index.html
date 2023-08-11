@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelPartner | Travel Made Easy</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="index.html"><span>Travel</span>Partner</a>
+            </div>
+            <div class="nav-search">
+                <input type="number" name="search" id="search" placeholder="Enter your max price in $...">
+                <button id="search_btn">
+                    <i class='bx bx-search'></i>
+                </button>
+            </div>
+            <div class="nav-right">
+                <div class="wishlist">
+                    <a href="">
+                        <i class='bx bxs-heart' style="color: red;"></i>
+                        <p>Wishlist</p>
+                    </a>
+                </div>
+                <div class="create-acc">
+                    <button id="acc">Create Account</button>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="side-nav">
+                <ul id="side-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://rapidapi.com/apidojo/api/hotels4">API Documentation</a></li>
+                </ul>
+                <h3>Sort</h3>
+                <ul id="side-sort">
+                    <li>
+                        <input type="radio" name="sort" id="lowtohigh" checked>
+                        <label for="lowtohigh">Price Low to High</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="sort" id="hightolow">
+                        <label for="hightolow">Price High to Low</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="sort" id="atoz">
+                        <label for="atoz">Sort A to Z</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="sort" id="ztoa">
+                        <label for="ztoa">Sort Z to A</label>
+                    </li>
+                </ul>
+                <p>Copyright under ProdSafar Ltd. All rights reserved.</p>
+            </div>
+            <div class="main-content">
+                <div class="prev">
+                    <i class='bx bx-chevron-left' style="color: black;"></i>
+                </div>
+                <div class="main-page">
+                    <img src="https://holidayturn.com/wp-content/uploads/2017/12/Safari-Court-Hotel-Pool.jpg" alt="hotel-bg">
+                    <h1><span>Travel</span>Partner</h1>
+                    <p>Get hotels at your own budget.</p>
+                    <p>Enter the maximum price in numbers in the field above.</p>
+                    <button>API Documentation</button>
+                </div>
+                <div class="next">
+                    <i class='bx bx-chevron-right' style="color: black;"></i>
+                </div>
+                <p style="color:white; position: absolute;bottom:1rem;left: 30%;">Limited hotels only. Free API Used for hotels everywhere in the world.</p>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="global.js"></script>
+</body>
+</html>
